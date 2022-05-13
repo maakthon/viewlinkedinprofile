@@ -21,15 +21,22 @@
 		<h4>Linkedin profile URL</h4>
 		<input type="text" name="url" id="url_input">
 		<input type="submit" name="view"  value="View">
-		<p id="demo"></p>
+
 	</form>
 
-
+		<p id="demo"></p>
 
 	<script>
 	
 		function test(){
-				alert(1);
+				var val = document.getElementById("url_input").value;
+				if (val == "") {
+				alert("Please input Linkedin profile URL.");
+				}
+				else{
+					document.getElementById("demo").innerHTML = "Please wait...";	
+
+				}
 		}
 		
 	//	var url="https://stackoverflow.com/questions/4730865/getting-the-source-code-of-an-iframe",xmlhttp;//Remember, same domain
