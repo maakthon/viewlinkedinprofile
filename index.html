@@ -17,29 +17,34 @@
   <body>
     <h2>View Linkedin Profile Anonymously</h2>
     
-	<form method="post" onsubmit="test()">
+	<form method="get" onsubmit="test()">
 		<h4>Linkedin profile URL</h4>
 		<input type="text" name="url" id="url_input">
 		<input type="submit" name="view"  value="View">
 		<p id="demo"></p>
 	</form>
 
-	<iframe id="fr" src="http://www.social-learn.com"></iframe>
-<!--
+
+
 	<script>
-		var url="https://stackoverflow.com/questions/4730865/getting-the-source-code-of-an-iframe",xmlhttp;//Remember, same domain
-		if("XMLHttpRequest" in window)xmlhttp=new XMLHttpRequest();
-		if("ActiveXObject" in window)xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
-		xmlhttp.open('GET',url,true);
-		xmlhttp.onreadystatechange=function()
-		{
-		    if(xmlhttp.readyState==4)alert(xmlhttp.responseText);
-		};
-		xmlhttp.send(null);
+	
+		function test(){
+				alert(1);
+		}
+		
+	//	var url="https://stackoverflow.com/questions/4730865/getting-the-source-code-of-an-iframe",xmlhttp;//Remember, same domain
+	//	if("XMLHttpRequest" in window)xmlhttp=new XMLHttpRequest();
+	//	if("ActiveXObject" in window)xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
+	//	xmlhttp.open('GET',url,true);
+	//	xmlhttp.onreadystatechange=function()
+	//	{
+	//	    if(xmlhttp.readyState==4)alert(xmlhttp.responseText);
+	//
+	//	xmlhttp.send(null);
 
 	</script>
 
--->
+
 
 
   </body>
