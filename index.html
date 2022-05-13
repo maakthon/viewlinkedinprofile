@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Linkedin Anonymously</title>
+   <!--  <script src="script.js"></script> -->
+
+	<style>
+		body{background:#123;color:white;}
+		h2{margin:10px}
+		form{margin:50px}
+		#fr{height:400px}
+	</style>
+
+  </head>
+  <body>
+    <h2>View Linkedin Profile Anonymously</h2>
+    
+	<form method="post" onsubmit="test()">
+		<h4>Linkedin profile URL</h4>
+		<input type="text" name="url" id="url_input">
+		<input type="submit" name="view"  value="View">
+		<p id="demo"></p>
+	</form>
+
+	<iframe id="fr" src="http://www.social-learn.com"></iframe>
+<!--
+	<script>
+		var url="https://stackoverflow.com/questions/4730865/getting-the-source-code-of-an-iframe",xmlhttp;//Remember, same domain
+		if("XMLHttpRequest" in window)xmlhttp=new XMLHttpRequest();
+		if("ActiveXObject" in window)xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
+		xmlhttp.open('GET',url,true);
+		xmlhttp.onreadystatechange=function()
+		{
+		    if(xmlhttp.readyState==4)alert(xmlhttp.responseText);
+		};
+		xmlhttp.send(null);
+
+	</script>
+
+-->
+
+
+  </body>
+</html>
 
