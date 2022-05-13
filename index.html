@@ -10,7 +10,7 @@
 		body{background:#123;color:white;}
 		h2{margin:10px}
 		form{margin:50px}
-		#fr{height:400px}
+		#fr{height:400px;width:100%;display:none}
 	</style>
 
   </head>
@@ -31,25 +31,11 @@
 	<script>
 	
 		function test(){
-				var val = document.getElementById("url_input").value;
-				if (val == "") {
-				alert("Please input Linkedin profile URL.");
-				}
-				else{
-					document.getElementById("demo").innerHTML = "Please wait...";	
+			document.getElementById("fr").style.display = "block";			
 
-				}
+
 		}
 		
-	//	var url="https://stackoverflow.com/questions/4730865/getting-the-source-code-of-an-iframe",xmlhttp;//Remember, same domain
-	//	if("XMLHttpRequest" in window)xmlhttp=new XMLHttpRequest();
-	//	if("ActiveXObject" in window)xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
-	//	xmlhttp.open('GET',url,true);
-	//	xmlhttp.onreadystatechange=function()
-	//	{
-	//	    if(xmlhttp.readyState==4)alert(xmlhttp.responseText);
-	//
-	//	xmlhttp.send(null);
 
 	</script>
 
