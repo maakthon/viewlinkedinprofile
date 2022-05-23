@@ -10,29 +10,37 @@
 		body{background:#123;color:white;}
 		h2{margin:10px}
 		form{margin:50px}
-		#fr{height:400px;width:100%;display:none}
+		#fr{height:400px}
 	</style>
 
   </head>
   <body>
     <h2>View Linkedin Profile Anonymously</h2>
     
-	<form method="get" onsubmit="test()">
+	<form method="post" onsubmit="test();return false">
 		<h4>Linkedin profile URL</h4>
 		<input type="text" name="url" id="url_input">
 		<input type="submit" name="view"  value="View">
 
 	</form>
 
-		<p id="demo"></p>
+	<button onclick="test()" >click here</button>
 
-		<iframe src="#" id="fr"></iframe>
+		<iframe id="demo" src='#' width="100%" height="500px"></iframe>
+
+
 
 	<script>
 	
 		function test(){
-			document.getElementById("fr").style.display = "block";			
-
+				var val = document.getElementById("url_input").value;
+				const req = new XMLHttpRequest();
+				req.open("GET","https://www.google.com" , false);
+				req.send(null);
+				var res = req.getAllResponseHeaders();
+				document.getElementById("demo").src = "https://wwf.org";
+				
+				//alert(res);  http://127.0.0.1/index-l.html
 
 		}
 		
