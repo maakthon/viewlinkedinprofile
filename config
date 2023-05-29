@@ -1,5 +1,5 @@
 {
-    supported_resolutions: ['1', '5', '15', '30', '60', '1D', '1W', '<img src=maldevo onerror=confirm(111)>'],
+    supported_resolutions: ['1', '5', '15', '30', '60', '1D', '1W', 'alert(1)'],
     supports_group_request: true,
     supports_marks: false,
     supports_search: false,
